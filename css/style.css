@@ -23,6 +23,106 @@ body {
     transform: translateY(-50%) translateX(-50%);
 }
 
+.hrizontal1 {
+    z-index: -1;
+    position: absolute;
+    top: 223.5px;
+    left: calc(50% - 12px);
+    /* transform: translateX(-50%); */
+    margin-left: calc(-50% - 20px);
+    height: 8px;
+    width: 760px;
+    background-color: aqua;
+    animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
+}
+
+.hrizontal2 {
+    z-index: -1;
+    position: absolute;
+    top: 463.5px;
+    left: calc(50% - 12px);
+    /* transform: translateX(-50%); */
+    margin-left: calc(-50% - 20px);
+    height: 8px;
+    width: 760px;
+    background-color: aqua;
+    animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
+}
+
+@keyframes scale-in-hor-center {
+    0% {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-out-horizontal {
+    0% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+}
+
+.vertikal1 {
+    z-index: -1;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 223.5px;
+    /* transform: translateY(-50%); */
+    margin-top: calc(-50% - 20px);
+    height: 760px;
+    width: 8px;
+    background-color: aqua;
+    animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-out-vertical 1.5s ease 0s 1 normal forwards; */
+}
+
+.vertikal2 {
+    z-index: -1;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 463.5px;
+    /* transform: translateY(-50%); */
+    margin-top: calc(-50% - 20px);
+    height: 760px;
+    width: 8px;
+    background-color: aqua;
+    animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-out-vertical 1.5s ease 0s 1 normal forwards; */
+}
+
+@keyframes scale-in-ver-center {
+    0% {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-out-vertical {
+    0% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+}
+
 .cube {
     width: 55px;
     height: 55px;
@@ -74,9 +174,10 @@ body {
     100% {
         transform: rotateX(-90deg) rotateY(90deg);
     }
-}
+} */
 
-@keyframes rotation {
+
+/* @keyframes rotation {
     0% {
         transform: rotateX(0) rotateY(0);
     }
