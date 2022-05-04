@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+.curser-pointer {
+    cursor: pointer;
+}
+
 .container {
     width: 720px;
     height: 720px;
