@@ -29,13 +29,10 @@ body {
     position: absolute;
     top: 223.5px;
     left: calc(50% - 12px);
-    /* transform: translateX(-50%); */
     margin-left: calc(-50% - 20px);
     height: 8px;
     width: 760px;
     background-color: aqua;
-    /* animation: scale-in-hor-center 1.5s ease 0s 1 normal none; */
-    /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
 }
 
 .hrizontal2 {
@@ -43,13 +40,10 @@ body {
     position: absolute;
     top: 463.5px;
     left: calc(50% - 12px);
-    /* transform: translateX(-50%); */
     margin-left: calc(-50% - 20px);
     height: 8px;
     width: 760px;
     background-color: aqua;
-    /* animation: scale-in-hor-center 1.5s ease 0s 1 normal none; */
-    /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
 }
 
 .scale-in-hor-center {
@@ -87,13 +81,10 @@ body {
     position: absolute;
     top: calc(50% - 12px);
     left: 223.5px;
-    /* transform: translateY(-50%); */
     margin-top: calc(-50% - 20px);
     height: 760px;
     width: 8px;
     background-color: aqua;
-    animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
-    /* animation: scale-out-vertical 1.5s ease 0s 1 normal forwards; */
 }
 
 .vertikal2 {
@@ -101,13 +92,10 @@ body {
     position: absolute;
     top: calc(50% - 12px);
     left: 463.5px;
-    /* transform: translateY(-50%); */
     margin-top: calc(-50% - 20px);
     height: 760px;
     width: 8px;
     background-color: aqua;
-    /* animation: scale-in-ver-center 1.5s ease 0s 1 normal none; */
-    /* animation: scale-out-vertical 1.5s ease 0s 1 normal forwards; */
 }
 
 .scale-in-ver-center {
@@ -750,6 +738,14 @@ body {
 
 .delay-17 {
     animation-delay: 1.7s !important;
+}
+
+.fullaqua {
+    background: #00ffff !important;
+}
+
+.halfaqua {
+    background: linear-gradient(to right, #262626 1%, #262626 20%, #00ffff 20%, #00ffff 80%, #262626 80%, #262626 100%) !important;
 }
 
 

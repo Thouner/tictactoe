@@ -110,27 +110,42 @@ function winnerDisplay(first, secound, third) {
 
 
 function removeCubes() {
+    document.getElementById('firdthorzontalline').classList.remove('scale-in-hor-center');
+    document.getElementById('secondhorzontalline').classList.remove('scale-in-hor-center');
+    document.getElementById('firdtvertikalline').classList.remove('scale-in-ver-center');
+    document.getElementById('secoundtvertikalline').classList.remove('scale-in-ver-center');
+
+    document.getElementById('firdthorzontalline').classList.add('scale-out-horizontal');
+    document.getElementById('secondhorzontalline').classList.add('scale-out-horizontal');
+    document.getElementById('firdtvertikalline').classList.add('scale-out-vertical');
+    document.getElementById('secoundtvertikalline').classList.add('scale-out-vertical');
+
+
+
     for (let i = 0; i < cubeCount.length; i++) {
         let n = cubeCount[i];
-        document.getElementById(`cube-${n}1`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}2`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}3`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}4`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}5`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}6`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}7`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}8`).classList.remove('animation-rotation');
-        document.getElementById(`cube-${n}9`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}1`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}2`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}3`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}4`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}5`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}6`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}7`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}8`).classList.remove('animation-rotation');
+        // document.getElementById(`cube-${n}9`).classList.remove('animation-rotation');
 
-        document.getElementById(`cube-${n}1`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}2`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}3`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}4`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}5`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}6`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}7`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}8`).classList.add('animation-rotationopacity0');
-        document.getElementById(`cube-${n}9`).classList.add('animation-rotationopacity0');
+        for (let index = 0; index < document.getElementById('cube-11').children.length; index++) {
+
+            document.getElementById(`cube-${n}1`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}2`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}3`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}4`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}5`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}6`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}7`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}8`).children[index].classList.add('animation-rotationopacity0');
+            document.getElementById(`cube-${n}9`).children[index].classList.add('animation-rotationopacity0');
+        }
     }
 }
 
