@@ -34,7 +34,7 @@ body {
     height: 8px;
     width: 760px;
     background-color: aqua;
-    animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-in-hor-center 1.5s ease 0s 1 normal none; */
     /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
 }
 
@@ -48,8 +48,16 @@ body {
     height: 8px;
     width: 760px;
     background-color: aqua;
-    animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-in-hor-center 1.5s ease 0s 1 normal none; */
     /* animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards; */
+}
+
+.scale-in-hor-center {
+    animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
+}
+
+.scale-out-horizontal {
+    animation: scale-out-horizontal 1.5s ease 0s 1 normal forwards;
 }
 
 @keyframes scale-in-hor-center {
@@ -98,8 +106,16 @@ body {
     height: 760px;
     width: 8px;
     background-color: aqua;
-    animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
+    /* animation: scale-in-ver-center 1.5s ease 0s 1 normal none; */
     /* animation: scale-out-vertical 1.5s ease 0s 1 normal forwards; */
+}
+
+.scale-in-ver-center {
+    animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
+}
+
+.scale-out-vertical {
+    animation: scale-out-vertical 1.5s ease 0s 1 normal forwards;
 }
 
 @keyframes scale-in-ver-center {
@@ -334,7 +350,7 @@ body {
 }
 
 .animation-rotationopacity0 {
-    animation: rotationopacity0 1s ease forwards !important;
+    animation: rotationopacity0 2s ease forwards !important;
 }
 
 @keyframes rotation {
@@ -349,11 +365,6 @@ body {
 @keyframes rotationopacity0 {
     0% {
         opacity: 1;
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3);
     }
     100% {
         opacity: 0;
