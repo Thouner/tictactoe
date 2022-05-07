@@ -1,11 +1,83 @@
 let fields = [];
 let currentShape = 'X';
-
-
+let cubeCount = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 function renderHeadline() {
     document.getElementById('headLine').innerHTML = `Player <span>${currentShape}</span>`;
+}
+
+
+function firstTimeCubesdisplay() {
+    for (let n = 1; n < 10; n++) {
+        document.getElementById(`cube-${n}1`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}2`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}3`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}4`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}5`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}6`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}7`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}8`).classList.add('animation-rotation');
+        document.getElementById(`cube-${n}9`).classList.add('animation-rotation');
+    }
+    displayTicTacToe();
+}
+
+
+function displayTicTacToe() {
+    document.getElementById('cube-11').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-12').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-13').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-15').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-18').firstElementChild.classList.add('fullaqua');
+
+    document.getElementById('cube-22').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-25').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-28').firstElementChild.classList.add('fullaqua');
+
+    document.getElementById('cube-31').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-32').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-33').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-34').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-37').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-38').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-39').firstElementChild.classList.add('fullaqua');
+
+
+    document.getElementById('cube-41').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-42').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-43').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-45').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-48').firstElementChild.classList.add('fullaqua');
+
+
+
+    document.getElementById('cube-61').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-62').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-63').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-64').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-67').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-68').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-69').firstElementChild.classList.add('fullaqua');
+
+
+    document.getElementById('cube-71').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-72').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-73').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-75').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-78').firstElementChild.classList.add('fullaqua');
+
+
+
+    document.getElementById('cube-91').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-92').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-93').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-94').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-95').firstElementChild.classList.add('halfaqua');
+    document.getElementById('cube-96').firstElementChild.classList.add('halfaqua');
+    document.getElementById('cube-97').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-98').firstElementChild.classList.add('fullaqua');
+    document.getElementById('cube-99').firstElementChild.classList.add('fullaqua');
 }
 
 
@@ -20,53 +92,51 @@ function selectField(n) {
         currentShape = 'X';
     }
     document.getElementById(`selected${n}`).classList.add('d-none');
+    renderHeadline();
     winCheckingX();
     winCheckingO();
-    renderHeadline();
 }
 
 
 function winCheckingX() {
     if (fields[1] == 'X' && fields[2] == 'X' && fields[3] == 'X') {
-        winnerDisplay(1, 2, 3);
+        winnerDisplay(1, 2, 3, 'X');
         console.log('X winning');
     }
     if (fields[4] == 'X' && fields[5] == 'X' && fields[6] == 'X') {
-        winnerDisplay(4, 5, 6);
+        winnerDisplay(4, 5, 6, 'X');
         console.log('X winning');
     }
     if (fields[7] == 'X' && fields[8] == 'X' && fields[9] == 'X') {
-        winnerDisplay(7, 8, 9);
+        winnerDisplay(7, 8, 9, 'X');
         console.log('X winning');
     }
     if (fields[1] == 'X' && fields[4] == 'X' && fields[7] == 'X') {
-        winnerDisplay(1, 4, 7);
+        winnerDisplay(1, 4, 7, 'X');
         console.log('X winning');
     }
     if (fields[2] == 'X' && fields[5] == 'X' && fields[8] == 'X') {
-        winnerDisplay(2, 5, 8);
+        winnerDisplay(2, 5, 8, 'X');
         console.log('X winning');
     }
     if (fields[3] == 'X' && fields[6] == 'X' && fields[9] == 'X') {
-        winnerDisplay(3, 6, 9);
+        winnerDisplay(3, 6, 9, 'X');
         console.log('X winning');
     }
     if (fields[1] == 'X' && fields[5] == 'X' && fields[9] == 'X') {
-        winnerDisplay(1, 5, 9);
+        winnerDisplay(1, 5, 9, 'X');
         console.log('X winning');
     }
     if (fields[3] == 'X' && fields[5] == 'X' && fields[7] == 'X') {
-        winnerDisplay(3, 5, 7);
+        winnerDisplay(3, 5, 7, 'X');
         console.log('X winning');
     }
 }
 
 
-
-
 function winCheckingO() {
     if (fields[1] == 'O' && fields[2] == 'O' && fields[3] == 'O') {
-        winnerDisplay(1, 2, 3);
+        winnerDisplay(1, 2, 3, 'O');
         console.log('O winning');
     }
     if (fields[4] == 'O' && fields[5] == 'O' && fields[6] == 'O') {
@@ -74,38 +144,43 @@ function winCheckingO() {
         console.log('O winning');
     }
     if (fields[7] == 'O' && fields[8] == 'O' && fields[9] == 'O') {
-        winnerDisplay(7, 8, 9);
+        winnerDisplay(7, 8, 9, 'O');
         console.log('O winning');
     }
     if (fields[1] == 'O' && fields[4] == 'O' && fields[7] == 'O') {
-        winnerDisplay(1, 4, 7);
+        winnerDisplay(1, 4, 7, 'O');
         console.log('O winning');
     }
     if (fields[2] == 'O' && fields[5] == 'O' && fields[8] == 'O') {
-        winnerDisplay(2, 5, 8);
+        winnerDisplay(2, 5, 8, 'O');
         console.log('O winning');
     }
     if (fields[3] == 'O' && fields[6] == 'O' && fields[9] == 'O') {
-        winnerDisplay(3, 6, 9);
+        winnerDisplay(3, 6, 9, 'O');
         console.log('O winning');
     }
     if (fields[1] == 'O' && fields[5] == 'O' && fields[9] == 'O') {
-        winnerDisplay(1, 5, 9);
+        winnerDisplay(1, 5, 9, 'O');
         console.log('O winning');
     }
     if (fields[3] == 'O' && fields[5] == 'O' && fields[7] == 'O') {
-        winnerDisplay(3, 5, 7);
+        winnerDisplay(3, 5, 7, 'O');
         console.log('O winning');
     }
 }
 
-let cubeCount = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function winnerDisplay(first, secound, third) {
+function winnerDisplay(first, secound, third, winner) {
     cubeCount.splice(cubeCount.indexOf(first), 1);
     cubeCount.splice(cubeCount.indexOf(secound), 1);
     cubeCount.splice(cubeCount.indexOf(third), 1);
-    setTimeout(removeCubes, 1500);
+    renderWinnerHeadline(winner);
+    setTimeout(removeCubes, 1000);
+}
+
+
+function renderWinnerHeadline(winner) {
+    document.getElementById('headLine').innerHTML = `Player <span>${winner}</span> wins`;
 }
 
 
@@ -124,15 +199,7 @@ function removeCubes() {
 
     for (let i = 0; i < cubeCount.length; i++) {
         let n = cubeCount[i];
-        // document.getElementById(`cube-${n}1`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}2`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}3`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}4`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}5`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}6`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}7`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}8`).classList.remove('animation-rotation');
-        // document.getElementById(`cube-${n}9`).classList.remove('animation-rotation');
+
 
         for (let index = 0; index < document.getElementById('cube-11').children.length; index++) {
 
