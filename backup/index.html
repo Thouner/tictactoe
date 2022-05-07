@@ -17,7 +17,9 @@
     <script src="js/script.js"></script>
 </head>
 
-<body onload="renderHeadline(), setTimeout(firstTimeCubesdisplay, 1000)">
+<body onload="renderStartHeadline(), setTimeout(firstTimeCubesdisplay, 1000)" class="p-relativ">
+    <div onclick="renderSelection()" class="selection"></div>
+    <div onclick="renderSartGame()" class="selection d-none"></div>
     <div id="headLine"></div>
 
     <div class="container">
@@ -26,15 +28,15 @@
         <div id="firdtvertikalline" class="vertikal1 scale-in-ver-center d-none"></div>
         <div id="secoundtvertikalline" class="vertikal2 scale-in-ver-center d-none"></div>
 
-        <div id="selected1" onclick="selectField(1)" class="select1 curser-pointer"></div>
-        <div id="selected2" onclick="selectField(2)" class="select2 curser-pointer"></div>
-        <div id="selected3" onclick="selectField(3)" class="select3 curser-pointer"></div>
-        <div id="selected4" onclick="selectField(4)" class="select4 curser-pointer"></div>
-        <div id="selected5" onclick="selectField(5)" class="select5 curser-pointer"></div>
-        <div id="selected6" onclick="selectField(6)" class="select6 curser-pointer"></div>
-        <div id="selected7" onclick="selectField(7)" class="select7 curser-pointer"></div>
-        <div id="selected8" onclick="selectField(8)" class="select8 curser-pointer"></div>
-        <div id="selected9" onclick="selectField(9)" class="select9 curser-pointer"></div>
+        <div id="selected1" onclick="selectField(1)" class="select1 curser-pointer d-none"></div>
+        <div id="selected2" onclick="selectField(2)" class="select2 curser-pointer d-none"></div>
+        <div id="selected3" onclick="selectField(3)" class="select3 curser-pointer d-none"></div>
+        <div id="selected4" onclick="selectField(4)" class="select4 curser-pointer d-none"></div>
+        <div id="selected5" onclick="selectField(5)" class="select5 curser-pointer d-none"></div>
+        <div id="selected6" onclick="selectField(6)" class="select6 curser-pointer d-none"></div>
+        <div id="selected7" onclick="selectField(7)" class="select7 curser-pointer d-none"></div>
+        <div id="selected8" onclick="selectField(8)" class="select8 curser-pointer d-none"></div>
+        <div id="selected9" onclick="selectField(9)" class="select9 curser-pointer d-none"></div>
 
         <div class="cube top0 left0  delay-01" id="cube-11">
             <div class="top "></div>

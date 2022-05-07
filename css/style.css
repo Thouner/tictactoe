@@ -865,6 +865,40 @@ body {
     background-color: aqua;
 }
 
+.half-right-bottum::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 30px;
+    width: 40px;
+    background-color: aqua;
+}
+
+.half-right-bottum::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 40px;
+    width: 30px;
+    background-color: aqua;
+}
+
+.half-T-right {
+    background: linear-gradient(to right, #262626 0%, #262626 20%, #00ffff 20%, #00ffff 80%, #262626 80%, #262626 100%) !important;
+}
+
+.half-T-right::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 30px;
+    width: 40px;
+    background-color: aqua;
+}
+
 .half-T-left {
     background: linear-gradient(to bottom, #262626 0%, #262626 20%, #00ffff 20%, #00ffff 80%, #262626 80%, #262626 100%) !important;
 }
