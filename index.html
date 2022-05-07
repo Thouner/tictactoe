@@ -18,8 +18,8 @@
 </head>
 
 <body onload="renderStartHeadline(), setTimeout(firstTimeCubesdisplay, 1000)" class="p-relativ">
-    <div onclick="renderSelection()" class="selection"></div>
-    <div onclick="renderSartGame()" class="selection d-none"></div>
+    <div id="renderselection" onclick="renderSelection()" class="selection curser-pointer"></div>
+    <div onclick="renderSartGame()" class="selection curser-pointer d-none"></div>
     <div id="headLine"></div>
 
     <div class="container">
@@ -37,6 +37,9 @@
         <div id="selected7" onclick="selectField(7)" class="select7 curser-pointer d-none"></div>
         <div id="selected8" onclick="selectField(8)" class="select8 curser-pointer d-none"></div>
         <div id="selected9" onclick="selectField(9)" class="select9 curser-pointer d-none"></div>
+
+        <div id="selectx" onclick="selectShape('X')" class="select4 curser-pointer d-none"></div>
+        <div id="selecto" onclick="selectShape('O')" class="select6 curser-pointer d-none"></div>
 
         <div class="cube top0 left0  delay-01" id="cube-11">
             <div class="top "></div>

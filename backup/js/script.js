@@ -1,5 +1,5 @@
 let fields = [];
-let currentShape = 'X';
+let currentShape = '';
 let cubeCount = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
@@ -8,12 +8,12 @@ function renderStartHeadline() {
 }
 
 
-function renderStartHeadline() {
-    document.getElementById('headLine').innerHTML = `click to <span>start</span> the game`;
+function renderSelectHeadline() {
+    document.getElementById('headLine').innerHTML = `Who starts <span>?</span>`;
 }
 
 
-function renderHeadline() {
+function renderPlayerHeadline() {
     document.getElementById('headLine').innerHTML = `Player <span>${currentShape}</span>`;
 }
 
@@ -107,9 +107,26 @@ function displayTicTacToe() {
 
 
 function renderSelection() {
+    document.getElementById('renderselection').classList.add('d-none');
     removeAnimation();
     setTimeout(addAnimation, 1);
+    renderSelectHeadline();
+    document.getElementById('selectx').classList.remove('d-none');
+    document.getElementById('selecto').classList.remove('d-none');
 }
+
+
+function selectShape(shape) {
+    currentShape = shape;
+    renderPlayerHeadline();
+    document.getElementById('selectx').classList.add('d-none');
+    document.getElementById('selecto').classList.add('d-none');
+    for (let i = 1; i < 10; i++) {
+        document.getElementById(`selected${i}`).classList.remove('d-none');
+    }
+
+}
+
 
 
 function removeAnimation() {
