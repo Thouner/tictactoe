@@ -17,12 +17,14 @@
     <script src="js/script.js"></script>
 </head>
 
-<body onload="renderStartHeadline(), setTimeout(firstTimeCubesdisplay, 1000)" class="p-relativ">
-    <div id="renderselection" onclick="renderSelection()" class="selection curser-pointer"></div>
-    <div onclick="renderSartGame()" class="selection curser-pointer d-none"></div>
+<body onload="renderCubeArea(), renderStartHeadline(), setTimeout(firstTimeCubesdisplay, 1000), setTimeout(clickArea,2700)" class="p-relativ">
+    <div id="renderselection" onclick="renderSelection()" class="selection curser-pointer d-none"></div>
+    <div id="restart" onclick="restartSartGame()" class="selection curser-pointer d-none"></div>
     <div id="headLine"></div>
 
     <div class="container">
+        <div id="cubeArea" class="cubeara"></div>
+
         <div id="firdthorzontalline" class="hrizontal1 scale-in-hor-center d-none"></div>
         <div id="secondhorzontalline" class="hrizontal2 scale-in-hor-center d-none"></div>
         <div id="firdtvertikalline" class="vertikal1 scale-in-ver-center d-none"></div>
@@ -38,10 +40,12 @@
         <div id="selected8" onclick="selectField(8)" class="select8 curser-pointer d-none"></div>
         <div id="selected9" onclick="selectField(9)" class="select9 curser-pointer d-none"></div>
 
-        <div id="selectx" onclick="selectShape('X')" class="select4 curser-pointer d-none"></div>
-        <div id="selecto" onclick="selectShape('O')" class="select6 curser-pointer d-none"></div>
+        <div id="selectx" onclick="selectShape('X')" class="select44 curser-pointer d-none"></div>
+        <div id="selecto" onclick="selectShape('O')" class="select66 curser-pointer d-none"></div>
 
-        <div class="cube top0 left0  delay-01" id="cube-11">
+
+
+        <!-- <div class="cube top0 left0  delay-01" id="cube-11">
             <div class="top "></div>
             <div class="bottom"></div>
             <div class="front "></div>
@@ -688,7 +692,7 @@
             <div class="back "></div>
             <div class="left "></div>
             <div class="right "></div>
-        </div>
+        </div> -->
     </div>
     <b>inspired by David Verlangieri</b>
     <P><a href="https://codepen.io/verlangieri/" target="blank">Codepen</a><span>Or</span><a href="https://twitter.com/verlangieri_d " target="blank">twitter</a></P>
