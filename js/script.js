@@ -543,11 +543,24 @@ function removedisplayAeraSelectXandO() {
 
 
 function displaylines() {
+    linesAnimatoinToggle();
     linesRemoveDnone();
     removeSelectfielsDnone();
     removeDelayFromCube();
     setTimeout(removeCubeAnimation, 1);
     removeCubeAnimation
+}
+
+
+function linesAnimatoinToggle() {
+    document.getElementById('firdthorzontalline').classList.add('scale-in-hor-center');
+    document.getElementById('secondhorzontalline').classList.add('scale-in-hor-center');
+    document.getElementById('firdtvertikalline').classList.add('scale-in-ver-center');
+    document.getElementById('secoundtvertikalline').classList.add('scale-in-ver-center');
+    document.getElementById('firdthorzontalline').classList.remove('scale-out-horizontal');
+    document.getElementById('secondhorzontalline').classList.remove('scale-out-horizontal');
+    document.getElementById('firdtvertikalline').classList.remove('scale-out-vertical');
+    document.getElementById('secoundtvertikalline').classList.remove('scale-out-vertical');
 }
 
 
@@ -665,6 +678,7 @@ function selectField(n) {
     checkForNextPlayer(n);
     removeSelectAreaForChoose(n);
     renderPlayerHeadline();
+    checkDraw();
     winCheckingX();
     winCheckingO();
 }
@@ -685,6 +699,25 @@ function checkForNextPlayer(n) {
 
 function removeSelectAreaForChoose(n) {
     document.getElementById(`selected${n}`).classList.add('d-none');
+}
+
+
+function checkDraw() {
+    if (fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && fields[9]) {
+        displayDraw();
+    }
+}
+
+
+function displayDraw() {
+    renderDrawHeadline();
+    removeLines();
+    setTimeout(restartGameArea, 2000);
+}
+
+
+function renderDrawHeadline() {
+    document.getElementById('headLine').innerHTML = `<span>nobody</span> won`;
 }
 
 
@@ -713,6 +746,7 @@ function winCheckingX() {
     if (fields[3] == 'X' && fields[5] == 'X' && fields[7] == 'X') {
         winnerDisplay(3, 5, 7, 'X');
     }
+
 }
 
 
@@ -749,6 +783,7 @@ function winnerDisplay(first, secound, third, winner) {
     cubeCount.splice(cubeCount.indexOf(secound), 1);
     cubeCount.splice(cubeCount.indexOf(third), 1);
     renderWinnerHeadline(winner);
+    removeAllSelectAreaForChoose();
     setTimeout(removeCubes, 1000);
 }
 
@@ -762,6 +797,13 @@ function removeCubes() {
     removeLines();
     removeUnusedDice();
     setTimeout(restartGameArea, 2000);
+}
+
+
+function removeAllSelectAreaForChoose() {
+    for (let n = 1; n < 10; n++) {
+        document.getElementById(`selected${n}`).classList.add('d-none');
+    }
 }
 
 
@@ -804,12 +846,17 @@ function restartGameArea() {
 }
 
 function restartSartGame() {
+    removeAllDice();
+    fields = [];
+    currentShape = '';
+    cubeCount = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     document.getElementById('restart').classList.add('d-none')
-
     setTimeout(renderCubeArea, 2700);
     setTimeout(addCubeAnimation, 2700);
     setTimeout(addXandO, 2700);
     setTimeout(displaySelectXandO, 2700);
+    setTimeout(renderSelectHeadline, 2700);
+
 }
 
 
