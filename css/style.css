@@ -165,7 +165,7 @@ body {
 .select1:hover~#cube-17,
 .select1:hover~#cube-18,
 .select1:hover~#cube-19 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select2 {
@@ -186,7 +186,7 @@ body {
 .select2:hover~#cube-27,
 .select2:hover~#cube-28,
 .select2:hover~#cube-29 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select3 {
@@ -207,7 +207,7 @@ body {
 .select3:hover~#cube-37,
 .select3:hover~#cube-38,
 .select3:hover~#cube-39 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select4 {
@@ -237,7 +237,7 @@ body {
 .select4:hover~#cube-47,
 .select4:hover~#cube-48,
 .select4:hover~#cube-49 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select5 {
@@ -258,7 +258,7 @@ body {
 .select5:hover~#cube-57,
 .select5:hover~#cube-58,
 .select5:hover~#cube-59 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select6 {
@@ -288,7 +288,7 @@ body {
 .select6:hover~#cube-67,
 .select6:hover~#cube-68,
 .select6:hover~#cube-69 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select7 {
@@ -309,7 +309,7 @@ body {
 .select7:hover~#cube-77,
 .select7:hover~#cube-78,
 .select7:hover~#cube-79 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select8 {
@@ -330,7 +330,7 @@ body {
 .select8:hover~#cube-87,
 .select8:hover~#cube-88,
 .select8:hover~#cube-89 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 .select9 {
@@ -351,7 +351,7 @@ body {
 .select9:hover~#cube-97,
 .select9:hover~#cube-98,
 .select9:hover~#cube-99 {
-    animation: tilt 0.5s ease forwards
+    animation: tilt 0.5s ease forwards !important;
 }
 
 @keyframes tilt {
@@ -418,13 +418,6 @@ body {
     border: 2px solid #C9C8C0;
     background: #262626;
     overflow: hidden;
-}
-
-.cube img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    background: transparent;
 }
 
 .cube .front {
