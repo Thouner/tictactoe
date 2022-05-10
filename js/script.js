@@ -144,7 +144,7 @@ function selectShape(shape) {
 
 
 function renderPlayerHeadline() {
-    document.getElementById('headLine').innerHTML = `Player <span>${currentShape}</span>`;
+    document.getElementById('headLine').innerHTML = `Player <span>${currentShape}</span> Turn`;
 }
 
 
