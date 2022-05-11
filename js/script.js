@@ -272,7 +272,9 @@ function removeSelectAreaForChoose(n) {
 
 function checkDraw() {
     if (fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && fields[9]) {
-        displayDraw();
+        if (!winCheckingX || !winCheckingO) {
+            displayDraw();
+        }
     }
 }
 
@@ -373,8 +375,7 @@ function removeUnusedDice() {
 
 
 function restartGameArea() {
-    document.getElementById('headLine').innerHTML += `
-    <br>
+    document.getElementById('headLine2').innerHTML = `
     click to <span>restart</span> the game
     `;
     document.getElementById('restart').classList.remove('d-none')
@@ -395,6 +396,7 @@ function resetVarialbe() {
     fields = [];
     currentShape = '';
     cubeCount = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    document.getElementById('headLine2').innerHTML = '';
     document.getElementById('restart').classList.add('d-none')
 }
 
