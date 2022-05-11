@@ -272,11 +272,45 @@ function removeSelectAreaForChoose(n) {
 
 function checkDraw() {
     if (fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && fields[9]) {
-        if (!winCheckingX || !winCheckingO) {
-            displayDraw();
+        // if (winCheckingX && winCheckingO) {
+        //     displayDraw();
+        // }
+        if (fields[1] == 'X' && fields[2] == 'X' && fields[3] == 'X') { winnerDisplay(1, 2, 3, 'X'); } else {
+            if (fields[4] == 'X' && fields[5] == 'X' && fields[6] == 'X') { winnerDisplay(4, 5, 6, 'X'); } else {
+                if (fields[7] == 'X' && fields[8] == 'X' && fields[9] == 'X') { winnerDisplay(7, 8, 9, 'X'); } else {
+                    if (fields[1] == 'X' && fields[4] == 'X' && fields[7] == 'X') { winnerDisplay(1, 4, 7, 'X'); } else {
+                        if (fields[2] == 'X' && fields[5] == 'X' && fields[8] == 'X') { winnerDisplay(2, 5, 8, 'X'); } else {
+                            if (fields[3] == 'X' && fields[6] == 'X' && fields[9] == 'X') { winnerDisplay(3, 6, 9, 'X'); } else {
+                                if (fields[1] == 'X' && fields[5] == 'X' && fields[9] == 'X') { winnerDisplay(1, 5, 9, 'X'); } else {
+                                    if (fields[3] == 'X' && fields[5] == 'X' && fields[7] == 'X') { winnerDisplay(3, 5, 7, 'X'); } else {
+
+                                        if (fields[1] == 'O' && fields[2] == 'O' && fields[3] == 'O') { winnerDisplay(1, 2, 3, 'O'); } else {
+                                            if (fields[4] == 'O' && fields[5] == 'O' && fields[6] == 'O') { winnerDisplay(4, 5, 6, 'O'); } else {
+                                                if (fields[7] == 'O' && fields[8] == 'O' && fields[9] == 'O') { winnerDisplay(7, 8, 9, 'O'); } else {
+                                                    if (fields[1] == 'O' && fields[4] == 'O' && fields[7] == 'O') { winnerDisplay(1, 4, 7, 'O'); } else {
+                                                        if (fields[2] == 'O' && fields[5] == 'O' && fields[8] == 'O') { winnerDisplay(2, 5, 8, 'O'); } else {
+                                                            if (fields[3] == 'O' && fields[6] == 'O' && fields[9] == 'O') { winnerDisplay(3, 6, 9, 'O'); } else {
+                                                                if (fields[1] == 'O' && fields[5] == 'O' && fields[9] == 'O') { winnerDisplay(1, 5, 9, 'O'); } else {
+                                                                    if (fields[3] == 'O' && fields[5] == 'O' && fields[7] == 'O') { winnerDisplay(3, 5, 7, 'O'); } else { displayDraw(); }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+
 }
+
 
 
 function displayDraw() {
