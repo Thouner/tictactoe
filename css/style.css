@@ -25,8 +25,9 @@ body {
 }
 
 .container {
-    width: 720px;
-    height: 720px;
+    max-width: 635px;
+    width: 635px;
+    height: 635px;
     position: relative;
     /* perspective: 1000px; */
     left: 50%;
@@ -46,23 +47,23 @@ body {
 .hrizontal1 {
     z-index: -1;
     position: absolute;
-    top: 223.5px;
+    top: 203.5px;
     left: calc(50% - 12px);
     margin-left: calc(-50% - 20px);
     height: 8px;
-    width: 760px;
-    background-color: aqua;
+    width: 700px;
+    background-color: #833ab4;
 }
 
 .hrizontal2 {
     z-index: -1;
     position: absolute;
-    top: 463.5px;
+    top: 423.5px;
     left: calc(50% - 12px);
     margin-left: calc(-50% - 20px);
     height: 8px;
-    width: 760px;
-    background-color: aqua;
+    width: 700px;
+    background-color: #833ab4;
 }
 
 .scale-in-hor-center {
@@ -99,22 +100,22 @@ body {
     z-index: -1;
     position: absolute;
     top: calc(50% - 12px);
-    left: 223.5px;
+    left: 203.5px;
     margin-top: calc(-50% - 20px);
-    height: 760px;
+    height: 700px;
     width: 8px;
-    background-color: aqua;
+    background-color: #833ab4;
 }
 
 .vertikal2 {
     z-index: -1;
     position: absolute;
     top: calc(50% - 12px);
-    left: 463.5px;
+    left: 423.5px;
     margin-top: calc(-50% - 20px);
-    height: 760px;
+    height: 700px;
     width: 8px;
-    background-color: aqua;
+    background-color: #833ab4;
 }
 
 .scale-in-ver-center {
@@ -581,7 +582,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(45deg);
 }
 
@@ -594,7 +595,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(45deg);
 }
 
@@ -607,7 +608,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(-45deg);
 }
 
@@ -620,7 +621,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(-45deg);
 }
 
@@ -633,7 +634,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(-45deg);
 }
 
@@ -646,7 +647,7 @@ body {
     margin-left: -15px;
     height: 230px;
     width: 30px;
-    background: #833ab4;
+    background: aqua;
     transform: rotate(45deg);
 }
 
@@ -655,35 +656,35 @@ body {
 }
 
 .top80 {
-    top: 80px;
+    top: 70px;
 }
 
 .top160 {
-    top: 160px;
+    top: 140px;
 }
 
 .top240 {
-    top: 240px;
+    top: 220px;
 }
 
 .top320 {
-    top: 320px;
+    top: 290px;
 }
 
 .top400 {
-    top: 400px;
+    top: 360px;
 }
 
 .top480 {
-    top: 480px;
+    top: 440px;
 }
 
 .top560 {
-    top: 560px;
+    top: 510px;
 }
 
 .top640 {
-    top: 640px;
+    top: 580px;
 }
 
 .left0 {
@@ -691,35 +692,35 @@ body {
 }
 
 .left80 {
-    left: 80px;
+    left: 70px;
 }
 
 .left160 {
-    left: 160px;
+    left: 140px;
 }
 
 .left240 {
-    left: 240px;
+    left: 220px;
 }
 
 .left320 {
-    left: 320px;
+    left: 290px;
 }
 
 .left400 {
-    left: 400px;
+    left: 360px;
 }
 
 .left480 {
-    left: 480px;
+    left: 440px;
 }
 
 .left560 {
-    left: 560px;
+    left: 510px;
 }
 
 .left640 {
-    left: 640px;
+    left: 580px;
 }
 
 .delay-01 {
@@ -1128,8 +1129,8 @@ body {
 /*---------*/
 
 .container {
-    margin-top: 40px;
-    margin-bottom: -40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #headLine {
@@ -1152,7 +1153,7 @@ b {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 30px;
     margin: 0 auto;
     width: 280px;
     text-align: center;
@@ -1167,7 +1168,7 @@ p {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 10px;
     margin: 0 auto;
     width: 280px;
     text-align: center;

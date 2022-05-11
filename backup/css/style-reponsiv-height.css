@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (min-height: 680px) {
     * {
         box-sizing: border-box;
     }
@@ -22,9 +22,9 @@
         width: 100%;
     }
     .container {
-        max-width: 720px;
-        width: 63.5vw;
-        height: 63.5vw;
+        max-height: 720px;
+        width: 72vh;
+        height: 72vh;
         position: relative;
         /* perspective: 1000px; */
         left: 50%;
@@ -42,22 +42,22 @@
     .hrizontal1 {
         z-index: -1;
         position: absolute;
-        top: 20.35vw;
-        left: calc(50% - 1.2vw);
-        margin-left: calc(-50% - 2vw);
-        height: 0.8vw;
-        width: 70vw;
-        background-color: #833ab4;
+        top: 22.35vh;
+        left: calc(50% - 1.2vh);
+        margin-left: calc(-50% - 2vh);
+        height: 0.8vh;
+        width: 76vh;
+        background-color: aqua;
     }
     .hrizontal2 {
         z-index: -1;
         position: absolute;
-        top: 42.35vw;
-        left: calc(50% - 1.2vw);
-        margin-left: calc(-50% - 2vw);
-        height: 0.8vw;
-        width: 70vw;
-        background-color: #833ab4;
+        top: 46.35vh;
+        left: calc(50% - 1.2vh);
+        margin-left: calc(-50% - 2vh);
+        height: 0.8vh;
+        width: 76vh;
+        background-color: aqua;
     }
     .scale-in-hor-center {
         animation: scale-in-hor-center 1.5s ease 0s 1 normal none;
@@ -88,22 +88,22 @@
     .vertikal1 {
         z-index: -1;
         position: absolute;
-        top: calc(50% - 1.2vw);
-        left: 20.35vw;
-        margin-top: calc(-50% - 2vw);
-        height: 70vw;
-        width: 0.8vw;
-        background-color: #833ab4;
+        top: calc(50% - 1.2vh);
+        left: 22.35vh;
+        margin-top: calc(-50% - 2vh);
+        height: 76vh;
+        width: 0.8vh;
+        background-color: aqua;
     }
     .vertikal2 {
         z-index: -1;
         position: absolute;
-        top: calc(50% - 1.2vw);
-        left: 42.35vw;
-        margin-top: calc(-50% - 2vw);
-        height: 70vw;
-        width: 0.8vw;
-        background-color: #833ab4;
+        top: calc(50% - 1.2vh);
+        left: 46.35vh;
+        margin-top: calc(-50% - 2vh);
+        height: 76vh;
+        width: 0.8vh;
+        background-color: aqua;
     }
     .scale-in-ver-center {
         animation: scale-in-ver-center 1.5s ease 0s 1 normal none;
@@ -134,10 +134,10 @@
     .select1 {
         z-index: 9;
         position: absolute;
-        top: -1.2vw;
-        left: -1.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: -1.2vh;
+        left: -1.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select1:hover~#cube-11,
     .select1:hover~#cube-12,
@@ -153,10 +153,10 @@
     .select2 {
         z-index: 9;
         position: absolute;
-        top: -1.2vw;
-        left: 21.0vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: -1.2vh;
+        left: 23.0vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select2:hover~#cube-21,
     .select2:hover~#cube-22,
@@ -172,10 +172,10 @@
     .select3 {
         z-index: 9;
         position: absolute;
-        top: -1.2vw;
-        left: 43.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: -1.2vh;
+        left: 47.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select3:hover~#cube-31,
     .select3:hover~#cube-32,
@@ -191,18 +191,18 @@
     .select4 {
         z-index: 9;
         position: absolute;
-        top: 21.0vw;
-        left: -1.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 23.0vh;
+        left: -1.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select44 {
         z-index: 9;
         position: absolute;
-        top: 21.0vw;
-        left: -1.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 23.0vh;
+        left: -1.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select4:hover~#cube-41,
     .select4:hover~#cube-42,
@@ -218,10 +218,10 @@
     .select5 {
         z-index: 9;
         position: absolute;
-        top: 21.0vw;
-        left: 21.0vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 23.0vh;
+        left: 23.0vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select5:hover~#cube-51,
     .select5:hover~#cube-52,
@@ -237,18 +237,18 @@
     .select6 {
         z-index: 9;
         position: absolute;
-        top: 21.0vw;
-        left: 43.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 23.0vh;
+        left: 47.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select66 {
         z-index: 9;
         position: absolute;
-        top: 21.0vw;
-        left: 45.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 23.0vh;
+        left: 47.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select6:hover~#cube-61,
     .select6:hover~#cube-62,
@@ -264,10 +264,10 @@
     .select7 {
         z-index: 9;
         position: absolute;
-        top: 43.2vw;
-        left: -1.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 47.2vh;
+        left: -1.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select7:hover~#cube-71,
     .select7:hover~#cube-72,
@@ -283,10 +283,10 @@
     .select8 {
         z-index: 9;
         position: absolute;
-        top: 43.2vw;
-        left: 21.0vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 47.2vh;
+        left: 23.0vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select8:hover~#cube-81,
     .select8:hover~#cube-82,
@@ -302,10 +302,10 @@
     .select9 {
         z-index: 9;
         position: absolute;
-        top: 43.2vw;
-        left: 43.2vw;
-        height: 21.4vw;
-        width: 21.4vw;
+        top: 47.2vh;
+        left: 47.2vh;
+        height: 23.4vh;
+        width: 23.4vh;
     }
     .select9:hover~#cube-91,
     .select9:hover~#cube-92,
@@ -327,8 +327,8 @@
         }
     }
     .cube {
-        width: 5.5vw;
-        height: 5.5vw;
+        width: 5.5vh;
+        height: 5.5vh;
         transform-style: preserve-3d;
         position: absolute;
     }
@@ -376,22 +376,22 @@
         overflow: hidden;
     }
     .cube .front {
-        transform: rotateY(0deg) translateZ(2.75vw);
+        transform: rotateY(0deg) translateZ(2.75vh);
     }
     .cube .back {
-        transform: rotateX(180deg) translateZ(2.75vw);
+        transform: rotateX(180deg) translateZ(2.75vh);
     }
     .cube .right {
-        transform: rotateY(90deg) translateZ(2.75vw);
+        transform: rotateY(90deg) translateZ(2.75vh);
     }
     .cube .left {
-        transform: rotateY(-90deg) translateZ(2.75vw);
+        transform: rotateY(-90deg) translateZ(2.75vh);
     }
     .cube .top {
-        transform: rotateX(90deg) translateZ(2.75vw);
+        transform: rotateX(90deg) translateZ(2.75vh);
     }
     .cube .bottom {
-        transform: rotateX(-90deg) translateZ(2.75vw);
+        transform: rotateX(-90deg) translateZ(2.75vh);
     }
     .top-leftO::before {
         position: absolute;
@@ -403,7 +403,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .top-centerO::before {
         position: absolute;
@@ -415,7 +415,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .top-rightO::before {
         position: absolute;
@@ -427,7 +427,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .left-centerO::before {
         position: absolute;
@@ -439,10 +439,10 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .center-centerO {
-        background: #e67e22 !important;
+        background: aqua !important;
     }
     .center-centerO::after {
         position: absolute;
@@ -466,7 +466,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .bottum-leftO::before {
         position: absolute;
@@ -478,7 +478,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .bottum-centerO::before {
         position: absolute;
@@ -490,7 +490,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .bottum-rightO::before {
         position: absolute;
@@ -502,7 +502,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: #e67e22;
+        background: aqua;
     }
     .top-leftX::before {
         position: absolute;
@@ -519,8 +519,8 @@
     .center-centerX::before {
         position: absolute;
         content: '';
-        top: 2.6vw;
-        left: 2.6vw;
+        top: 2.5vw;
+        left: 2.5vw;
         margin-top: -11.5vw;
         margin-left: -1.5vw;
         height: 23.0vw;
@@ -543,8 +543,8 @@
     .center-centerX::after {
         position: absolute;
         content: '';
-        top: 2.6vw;
-        left: 2.6vw;
+        top: 2.5vw;
+        left: 2.5vw;
         margin-top: -11.5vw;
         margin-left: -1.5vw;
         height: 23.0vw;
@@ -580,55 +580,55 @@
         top: 0;
     }
     .top80 {
-        top: 7vw;
+        top: 8vh;
     }
     .top160 {
-        top: 14vw;
+        top: 16vh;
     }
     .top240 {
-        top: 22vw;
+        top: 24vh;
     }
     .top320 {
-        top: 29vw;
+        top: 32vh;
     }
     .top400 {
-        top: 36vw;
+        top: 40vh;
     }
     .top480 {
-        top: 44vw;
+        top: 48vh;
     }
     .top560 {
-        top: 51vw;
+        top: 56vh;
     }
     .top640 {
-        top: 58vw;
+        top: 64vh;
     }
     .left0 {
         left: 0px;
     }
     .left80 {
-        left: 7vw;
+        left: 8vh;
     }
     .left160 {
-        left: 14vw;
+        left: 16vh;
     }
     .left240 {
-        left: 22vw;
+        left: 24vh;
     }
     .left320 {
-        left: 29vw;
+        left: 32vh;
     }
     .left400 {
-        left: 36vw;
+        left: 40vh;
     }
     .left480 {
-        left: 44vw;
+        left: 48vh;
     }
     .left560 {
-        left: 51vw;
+        left: 56vh;
     }
     .left640 {
-        left: 58vw;
+        left: 64vh;
     }
     .delay-01 {
         animation-delay: 0.1s !important;
@@ -738,7 +738,7 @@
     .half-left-bottum::before {
         content: '';
         position: absolute;
-        top: 1.0vw;
+        top: 1.1vw;
         right: 1.2vw;
         height: 3.0vw;
         width: 4.0vw;
@@ -807,7 +807,7 @@
     .half-T-left::before {
         content: '';
         position: absolute;
-        top: 1.1vw;
+        top: 1.0vw;
         left: 1.0vw;
         height: 4.0vw;
         width: 3.0vw;

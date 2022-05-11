@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="css/style-fonts.css">
     <link rel="stylesheet" href="css/style-padding-margin.css">
     <link rel="stylesheet" href="css/style-responsiv.css">
+    <!-- <link rel="stylesheet" href="css/style-reponsiv-height.css"> -->
     <link rel="stylesheet" href="css/style-text.css">
     <link rel="icon" type="image/x-icon" href="icon/bull.png">
     <script src="js/script.js"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/displayletters.js"></script>
 </head>
 
 <body onload="renderCubeArea(), setTimeout(renderStartHeadline,1700) , setTimeout(firstTimeCubesdisplay, 1000), setTimeout(clickArea,2700)" class="p-relativ">
@@ -23,6 +26,8 @@
     <div id="headLine"></div>
 
     <div class="container">
+
+        <div id="cubeArea" class="cubeara"></div>
 
         <div id="firdthorzontalline" class="hrizontal1 scale-in-hor-center d-none"></div>
         <div id="secondhorzontalline" class="hrizontal2 scale-in-hor-center d-none"></div>
@@ -41,8 +46,6 @@
 
         <div id="selectx" onclick="selectShape('X')" class="select44 curser-pointer d-none"></div>
         <div id="selecto" onclick="selectShape('O')" class="select66 curser-pointer d-none"></div>
-
-        <div id="cubeArea" class="cubeara"></div>
 
     </div>
     <b>inspired by David Verlangieri</b>

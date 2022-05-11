@@ -403,7 +403,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .top-centerO::before {
         position: absolute;
@@ -415,7 +415,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .top-rightO::before {
         position: absolute;
@@ -427,7 +427,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .left-centerO::before {
         position: absolute;
@@ -439,10 +439,10 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .center-centerO {
-        background: aqua !important;
+        background: #e67e22 !important;
     }
     .center-centerO::after {
         position: absolute;
@@ -466,7 +466,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .bottum-leftO::before {
         position: absolute;
@@ -478,7 +478,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .bottum-centerO::before {
         position: absolute;
@@ -490,7 +490,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .bottum-rightO::before {
         position: absolute;
@@ -502,7 +502,7 @@
         height: 18.0vw;
         width: 18.0vw;
         border-radius: 50%;
-        background: aqua;
+        background: #e67e22;
     }
     .top-leftX::before {
         position: absolute;
@@ -513,19 +513,19 @@
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(45deg);
     }
     .center-centerX::before {
         position: absolute;
         content: '';
-        top: 2.5vw;
-        left: 2.5vw;
+        top: 2.6vw;
+        left: 2.6vw;
         margin-top: -11.5vw;
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(45deg);
     }
     .top-rightX::before {
@@ -537,19 +537,19 @@
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(-45deg);
     }
     .center-centerX::after {
         position: absolute;
         content: '';
-        top: 2.5vw;
-        left: 2.5vw;
+        top: 2.6vw;
+        left: 2.6vw;
         margin-top: -11.5vw;
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(-45deg);
     }
     .bottum-leftX::before {
@@ -561,7 +561,7 @@
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(-45deg);
     }
     .bottum-rightX::before {
@@ -573,7 +573,7 @@
         margin-left: -1.5vw;
         height: 23.0vw;
         width: 3.0vw;
-        background: aqua;
+        background: #833ab4;
         transform: rotate(45deg);
     }
     .top0 {
