@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
     * {
         box-sizing: border-box;
     }
@@ -10,7 +10,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .curser-pointer {
         cursor: pointer;
