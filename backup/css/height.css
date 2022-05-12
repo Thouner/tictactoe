@@ -1,0 +1,8 @@
+@media screen and (max-height: 500px) {
+    #inspired1 {
+        display: none;
+    }
+    #inspired2 {
+        display: none;
+    }
+}

@@ -35,6 +35,11 @@ body {
     transform: translateY(-50%) translateX(-50%);
 }
 
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .cubeara {
     position: absolute;
     top: 0;
@@ -1127,11 +1132,6 @@ body {
 
 
 /*---------*/
-
-.container {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
 
 #headLine {
     font-family: "open sans", sans-serif;

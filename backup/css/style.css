@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .curser-pointer {
@@ -33,6 +33,11 @@ body {
     left: 50%;
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cubeara {
@@ -1128,17 +1133,27 @@ body {
 
 /*---------*/
 
-.container {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
 #headLine {
     font-family: "open sans", sans-serif;
     position: fixed;
     left: 0;
     right: 0;
     top: 20px;
+    margin: 0 auto;
+    width: 280px;
+    text-align: center;
+    font-size: 12px;
+    color: #C9C8C0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#headLine2 {
+    font-family: "open sans", sans-serif;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40px;
     margin: 0 auto;
     width: 280px;
     text-align: center;

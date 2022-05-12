@@ -1,5 +1,5 @@
-@media screen and (max-height: 840px) {
-    @media screen and (min-width: 801px) {
+@media screen and (max-hight: 880px) {
+    @media screen and (min-width: 1001px) {
         * {
             box-sizing: border-box;
         }

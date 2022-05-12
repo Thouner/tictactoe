@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     * {
         box-sizing: border-box;
     }
@@ -10,7 +10,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .curser-pointer {
         cursor: pointer;
@@ -981,7 +981,8 @@
     }
     /*---------*/
     .container {
-        margin-top: -20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     #headLine {
         font-family: "open sans", sans-serif;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 770px) {
     * {
         box-sizing: border-box;
     }
@@ -981,7 +981,8 @@
     }
     /*---------*/
     .container {
-        margin-top: -20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     #headLine {
         font-family: "open sans", sans-serif;
